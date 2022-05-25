@@ -45,3 +45,11 @@ function validarAssunto () {
         txtNome.innerHTML = "";
     }
 }
+function enviar() {
+    if(nomeOK == true) {
+        alert("Mensagem enviada!")
+    }
+    else {
+        alert("Mensagem não enviada!")
+}
+}
