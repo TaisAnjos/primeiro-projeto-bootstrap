@@ -1,60 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-    <link rel="stylesheet" href="assets/img/css/style.css" />
+    <!-- css do bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+  <body class="bg-dark text-white ">
+    <!-- nav -->
 
-  <body>
-    <nav>
-      <ul>
-        <a class="textmenu" href="index.html">
-          <li>Home</li>
-        </a>
+    <header>
+      <ul class="nav justify-content-center nav">
+        <li class="nav-item">
+          <a class="nav-link active text-primary" href="index.html">Inicío</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lancamentos.html">Lançamentos</a>
+        </li>
+        <!-- dropdwon -->
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-warning"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Extras</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item " href="#">Noticías</a>
+            <a class="dropdown-item " href="#">Solicite um anime</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item " href="https://myanimelist.net/">My anime list</a>
+          </div>
+
+          <!-- dropdwon -->
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link disabled">Sobre nós</a>
+        </li>
       </ul>
-    </nav>
-    <h1>Entre em contato comigo</h1>
-    <div class="container mg50">
-      <form>
-        <div>
-          <label for="Nome">Nome:</label>
-          <input class="input" type="text" id="nome" onkeyup="validarNome()" />
-          <div id="txtNome"></div>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input
-            class="input"
-            type="email"
-            id="email"
-            onkeyup="validarEmail()"
-          />
-          <div id="txtEmail"></div>
-        </div>
-        <div>
-          <label for="assunto">Assunto:</label>
-          <textarea
-            class="textarea"
-            name="assunto"
-            id="assunto"
-            cols="15"
-            rows="5"
-            onkeyup="validarAssunto()"
-          ></textarea>
-          <div id="txtAssunto"></div>
+    </header>
 
-          <button class="btn btn" onclick="enviar ()">Enviar</button>
+    <!-- nav -->
+
+    <!-- card do email -->
+<section>
+    <div class="container justify-content-center" >
+      <div class="row">
+        <div class="col mgl">
+
+       
+    <div class="card w-75">
+      <div class="card-body text-dark">
+        <h5 class="card-title">Entre em contato</h5>
+
+        <!-- email -->
+
+        <div class="card text-center" style="width: rem">
+          <div class="card-body">
+            <div class="container mg50">
+              <form>
+                <div>
+                  <label for="Nome">Nome:</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="nome"
+                    onkeyup="validarNome()"
+                  />
+                  <div id="txtNome"></div>
+                </div>
+                <div>
+                  <label for="email" >Email:</label>
+                  <input
+                    class="input"
+                    type="email"
+                    id="email"
+                    onkeyup="validarEmail()"
+                    placeholder="email@email.com"
+                  />
+                  <div id="txtEmail"></div>
+                </div>
+                <div>
+                  <label for="assunto">Assunto:</label>
+                  <textarea
+                    class="textarea"
+                    name="assunto"
+                    id="assunto"
+                    cols="25"
+                    rows="5"
+                    onkeyup="validarAssunto()"
+                  ></textarea>
+                  <div id="txtAssunto"></div>
+                </div>
+                <button class="btn btn-primary" onclick="enviar ()">
+                  Enviar
+                </button>
+              </form>
+
+              <!-- email -->
+            </div>
+          </div>
         </div>
-      </form>
+      </div>
     </div>
-    <div>
-      <footer>
-        <p>Todos direitos reservados: Tais Anjos &copy;</p>
-      </footer>
-    </div>
-    <script src="assets/js/script.js"></script>
+  </div>
+</div>
+</div>
+</section>
+    <!-- card do email -->
+
+    <div class="mgt"></div>
+
+     <!-- Footer -->
+     <footer>
+      <!-- Footer Elements -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row">
+          <div class="col-6 footer-copyright text-center">
+            © 2020 Copyright:
+            <a href=""> Tais Anjos</a>
+          </div>
+          <!-- Discord -->
+            <img
+              class="m-0"
+              src="assets/img/discord.png"
+              alt="discord"
+              width="30px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
   </body>
+
+  <!-- js do bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="assets/js/script.js"></script>
 </html>
